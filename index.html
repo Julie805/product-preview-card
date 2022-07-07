@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">	
+  <!--Google fonts here-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | Product preview card component</title>
 
@@ -14,34 +21,30 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+<!-- My code starts here -->
 <body>
   <div class="background">
-    <div class="container-wrapper">
-      <section class="product-image">
-        <img src="" alt=""/>
+    <div class="content-wrapper">
+      <section>
+        <img src="img/image-product-mobile.jpg" alt="Chanel perfume bottle"/>
       </section>
+
       <section class="about">
         <div class="features">
+          <h5>Perfume</h5>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
         </div>
         <div class="buy">
+          <h1>$149.99</h5>
+          <p class="crossed-out">$169.99</p>
         </div>
-      </section>
-      
+        <button class="cart">Add to Cart</button>
+      </section>     
     </div>
   </div>
 
-
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
