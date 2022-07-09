@@ -100,7 +100,7 @@ body {
 
 img {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 h5 {
@@ -110,18 +110,24 @@ h5 {
     color: gray;
     text-transform: uppercase;
     letter-spacing: .3em;
+    margin: 25px 0 0;
 }
 
 h1 {
     font-size: 2rem;
+    line-height: 2rem;
     font-family: 'Fraunces', serif;
     color: black;
+    margin: 10px 0;
+
 }
 
 p {
     font-size: .875rem;
+    line-height: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: gray;
+    margin-bottom: 40px;
 }
 
 .background {
@@ -137,9 +143,33 @@ p {
 
 .about {
     background-color: white;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 10px 10px;
     padding: 0 25px 50px 25px;   
 }
+
+.price { 
+  color: teal;
+  margin-right: 20px;
+  
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.cart {
+  background-color: teal;
+  color: white;
+  width: 100%;
+  padding: 13px 0;
+}
+
+.buy {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 
 
 
