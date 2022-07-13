@@ -89,6 +89,10 @@
 
 /* Base styles */
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
     background-color: rgb(232, 227, 220); 
@@ -98,10 +102,16 @@ body {
     text-align: left;
 }
 
-img {
+.mobile {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
+
+.desktop {
+  display: none;
+}
+
+
 
 h5 {
     font-size: .875rem;
@@ -137,7 +147,7 @@ p {
     width: 90%;
     margin: auto; 
     display: flex;
-    flex-direction:column;   
+    flex-direction: column;   
 }
 
 .about {
@@ -185,9 +195,43 @@ p {
 }
 
 .cart-icon {
-  width: 1rem;
+  transform: scale(1rem);
   padding-right: .5rem;
 }
+
+ /******** Desktop styles Here ********/ 
+@media only screen and (min-width: 1080px) {
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    border-radius: 10px 0 0 10px;
+    flex-shrink: 1;
+
+  }
+
+  .about {
+    border-radius: 0 10px 10px 0;
+    flex-grow: 0;
+    flex-basis: 1;
+  }
+
+  /**img {
+    flex-grow:  0;
+    flex-shrink: 0;
+    flex-basis: 5rem;
+    border: red 2px solid;
+  }**/
+}
+ 
 
 
 
